@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html{
+	font-size: 10px;
+}
+
+body{
+	width: 100%;
+	height: 100rem;
+	background-color: white;
+	/*overflow-y: hidden;*/
+}
+
+/*main section*/
+#main{
+	position: relative;
+	width: 70%;
+	height: 70rem;
+	display: flex;
+	justify-content: center;
+	/*background-color: li;*/
+
+	background-image: linear-gradient(#47476b,#19194d);
+	background-size: 100%;
+	margin-left: 20rem;
+	margin-top: 6rem;
+	padding: 0.5rem;
+	box-shadow: 2px 2px 5px black,-2px 5px 5px black,5px -2px 10px black;
+}
+
+#main:before{
+	/*width: 100%;
+	height: 100%;*/
+	content: " ";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.6;
+}
+
+#main > *{
+	z-index: 100;
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+}
+
+/*main top division*/
+.maintop{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.mtophead{
+color: white;
+z-index: 100;
+}
+
+.mtophead h1{
+	font-size: 2.2rem;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.mtophead p{
+	font-size: 1.5rem;
+}
+
+.mtopimage img{
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+/*end main top division*/
+
+ /*option division*/
+  .options{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: row;
+  /*position: relative;*/
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 25px;
+  padding-top: 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+    background-image: url('images/cards.jpeg');
+  background-size: 150% 100%;
+  font-family: 'Raleway', sans-serif;
+  }
+
+  .options:before{
+  	content: " ";
+  	width: 100%;
+  	height: 100%;
+  	position: fixed;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+  	background-color: black;
+  	opacity: 0.5;
+  	z-index: 1;
+  }
+
+  .options > *{
+  	z-index: 100;
+  }
+
+  .option{
+  	width: 100%;
+  	height: 35rem;
+  	background-color: #222;
+  	/*margin-left: 2.5rem;*/
+  	border-radius: 5px;
+  	box-shadow: 2px 5px 5px black,-2px 5px 5px black ;
+  	border: 2px solid white ;
+  }
+
+  .gallery{
+  	display: flex;
+  }
+
+
+
+ /*end option division*/
+
+ 
+
+
+/*end main section*/
+
+/*media query*/
+@media only screen and (max-width: 560px){
+  body{
+  	width: 100%;
+  	height: 100%;
+  }
+
+  #main{
+  	width: 96%;
+  	height: 65rem;
+  	margin: 0 ;
+  	overflow-x: hidden;
+  	overflow-y: scroll;
+      }
+
+       #main > *{
+       	z-index: 100;
+       }
+
+      .main{
+      	width: 100%;
+      	height: 100%;
+      }
+
+      .option{
+      	margin-top: 1rem;
+      	width: 24rem;
+      	min-height: 30rem;
+      	margin-left: 0;
+         	margin-bottom: 1rem;
+          position: relative;
+      	background-size: 100% 100%;
+
+      }
+
+      .option1{
+        background-image: url(images/d1.jpg);
+      }
+
+      .option:before{
+        content: "";
+        width: 100%;
+         background-color: black;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         right: 0;
+         left: 0;
+         transition: 0.5s;  
+      }
+
+      .option:hover:before{
+        width: 0%; 
+        content: " ";
+      }
+
+      .option2{
+      	background-image: url(images/d2.jpg);
+      }
+
+      .option3{
+      	background-image: url(images/d3.jpg);
+      	margin-bottom: 4rem;
+      }
+
+      .option4{
+          background-image: url(images/d4.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option5{
+        background-image: url(images/d5.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option6{
+         background-image: url(images/d6.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option7{
+        background-image: url(images/d11.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option8{
+        background-image: url(images/d7.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option9{
+        background-image: url(images/d8.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option10{
+        background-image: url(images/d10.jpg);
+        margin-bottom: 4rem;
+      }
+
+      .option:before{
+        content: "' Tap On This '";
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
+      }
+
+      .options{
+      	width: 100%;
+      	height: 40rem;
+      	flex-direction: column;
+      	align-items: center;
+      	overflow-y: scroll;
+      	padding-bottom: 2rem;
+      	margin-right: 4rem;
+      }
+
+      .optionsrel{
+      	width: 100%;
+      	height: 100%;
+      	position: relative;]
+      }
+
+      .options .mhead p{
+      	font-size: 1.2rem;
+        color: white;
+        text-decoration: underline;
+      }
+
+      .gallery{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .option1,.option2,.option3,.option4,.option5,.option6,.option7,.option8,.option9,.option10{      
+      }
+
+
+   
+   /*butterfly*/
+   .but{
+    position: absolute;
+    z-index: 1000;
+   }
+
+   .but img{
+    width: 10rem;
+   }
+
+   .but1{
+    width: 10rem;
+    top: 0;
+    left: 0;
+
+  }
+
+  .but2{
+    width: 10rem;
+    top: 40%;
+   
+  }
+
+  .but3{
+    width: 10rem;
+    top: 13%;
+    right: 0;
+  }
+
+  /*deco*/
+  .dec{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+  }
+
+  .dec{
+    top: 0;
+  }
+
+  .deco1 img{
+    width: 15rem;
+  }
+
+  .deco2 img,.deco4 img{
+    width: 5rem;
+  }
+
+
+  .deco3 img{
+    width: 8rem;
+  }
+
+  .decbal img{
+  animation: heart 10s ease infinite;
+    width: 8rem;
+  }
+
+  .deco2{
+   transform: translateY(1000%);
+    transition: 0.8s ease;
+    animation: heart 10s ease infinite;
+  }
+
+  .deco1,.deco4{
+    transform: translateY(1000%);
+    transition: 0.8s ease;
+    animation: heart 10s ease infinite;
+  }
+
+  .deco1{
+    animation-delay: 5s;
+    /*transform: translateY(1100%);*/
+  }
+
+  .deco4{
+    animation-delay: 6s;
+    transform: translateY(2000%);
+  }
+
+  .deco3{
+    right: 0;
+    top: 75%;
+  }
+
+  .deco5{
+    left: 50%;
+     animation-delay: 7.5s;
+     animation: heart 10s ease infinite;
+  }
+
+  .hbd img{
+    width: 10rem;
+     animation: heart 10s ease infinite;
+  }
+
+  .pbc{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    color: white;
+     animation: heart2 10s ease 1;
+     transform: translateY(1000rem);
+  }
+
+  .pbc{
+    font-size: 2rem;
+    font-family: 'Akaya Telivigala', cursive;
+  }
+
+  .pagal{
+    animation-delay: 2s;
+  }
+
+  .Buddhu{
+    animation-delay: 6s;
+
+  }
+
+  .chomuladki{
+    animation-delay: 10s;
+  }
+  /*end deco*/
+}
+/*end media query*/
+
+/*keyframes*/
+@keyframes heart{
+  0%{
+    transform: translateY(1000%);  
+  }
+
+    100%{
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes heart2{
+  0%{
+    transform: translateY(1000%);
+  }
+  100%{
+    transform: translateY(-1100%);
+  }
+}
